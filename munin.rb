@@ -45,9 +45,9 @@ end
 conn = BTW::Con.new(cli)
 begin
   conn.subscribe_measure! do |e|
-    puts "voltage\t#{e[:voltage]}"
-    puts "ampere\t#{e[:ampere]}"
-    puts "wattage\t#{e[:wattage]}"
+    puts "voltage #{e[:voltage]}"
+    puts "ampere #{e[:ampere]}"
+    puts "wattage #{e[:wattage]}"
 
     exit
   end
