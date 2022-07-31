@@ -50,5 +50,5 @@ begin
     exit
   end
 rescue DBus::Error => e
-  STDERR.puts "[INFO] Failed to connect to #{cli.addr}"
+  abort "[INFO] Failed to connect to #{cli.addr}"
 end
