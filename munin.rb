@@ -1,7 +1,9 @@
-require "./lib/cli"
-require "./lib/payload"
-require "./lib/connection"
-require "./lib/crc8"
+#!/usr/bin/env ruby
+
+require_relative "lib/cli"
+require_relative "lib/payload"
+require_relative "lib/connection"
+require_relative "lib/crc8"
 
 module BTW
   include BTWATTCH2
